@@ -4,6 +4,41 @@ However, it is also important to note that many npm packages have been adapted t
 
 While tools like specificers, CDNs and deno-npm or deno_npm may be a good option. However, if you can use native Deno modules, or if you only need to use a few npm packages, it may be more efficient and straightforward to do so.
 
+
+# The List of-npm-packages-adapted-to-deno
+
+| Deno                         | npm/Node                 | Status |
+|------------------------------|--------------------------|--------|
+| fs (Deno standard library)   | `fs` (Node.js file system API) | ✔ (adapted to work with Deno) |
+| http (Deno standard library) | `http` (Node.js HTTP API) | ✔ (adapted to work with Deno) |
+| path (Deno standard library) | `path` (Node.js path manipulation library) | ✔ (adapted to work with Deno) |
+| util (Deno standard library) | `util` (Node.js utility library) | ✔ (adapted to work with Deno) |
+| lodash (Deno module)         | `lodash` (JavaScript utility library) | ✔ (adapted to work with Deno) |
+| moment (Deno module)         | `moment` (JavaScript date and time library) | ✔ (adapted to work with Deno) |
+| isomorphic-fetch (Deno module) | `request` (HTTP request library) | ✔ (adapted to work with Deno) |
+| `react` (Deno module)      | `react` (JavaScript library for building user interfaces) | 🍋 (use FreshJS to work with Deno) |
+| axios (Deno module)          | `axios` (HTTP request library) | ❌ (not yet adapted to work with Deno) |
+| pg (Deno module)             | `pg` (PostgreSQL client library) | ❌ (not yet adapted to work with Deno) |
+| mongo (Deno module)          | `mongodb` (MongoDB driver library) | ❌ (not yet adapted to work with Deno) |
+| redis (Deno module)          | `redis` (Redis client library) | ❌ (not yet adapted to work with Deno) |
+| `bcrypt` (Deno module)     | `bcrypt` (password hashing library) | ❌ (not yet adapted to work with Deno) |
+| `crypto` (Deno module)     | `crypto` (cryptographic library) | ❌ (not yet adapted to work with Deno) |
+| `dotenv` (Deno module)     | `dotenv` (environment variable library) | ❌ (not yet adapted to work with Deno) |
+| `express` (Deno module)    | `express` (web framework) | ❌ (not yet adapted to work with Deno) |
+| `jest` (Deno module)       | `jest` (testing framework) | ❌ (not yet adapted to work with Deno) |
+| `knex` (Deno module)       | `knex` (SQL query builder) | ❌ (not yet adapted to work with Deno) |
+| `mocha` (Deno module)      | `mocha` (testing framework) | ❌ (not yet adapted to work with Deno) |
+| `mocha` (Deno module)      | `mocha` (testing framework) | ❌ (not yet adapted to work with Deno) |
+| `mysql2` (Deno module)     | `mysql2` (MySQL client library) | ❌ (not yet adapted to work with Deno) |
+| `passport` (Deno module)   | `passport` (authentication middleware) | ❌ (not yet adapted to work with Deno) |
+| `redux` (Deno module)      | `redux` (JavaScript library for managing application state) | ❌ (not yet adapted to work with Deno) |
+| `express-graphql` (Deno module) | `express-graphql` (GraphQL middleware for Express) | ❌ (not yet adapted to work with Deno) |
+| `next` (Deno module)       | `next` (web framework for server-rendered React apps) | ❌ (not yet adapted to work with Deno) |
+| `react-router` (Deno module) | `react-router` (routing library for React) | ❌ (not yet adapted to work with Deno) |
+| `chai` (Deno module)       | `chai` (assertion library) | ❌ (not yet adapted to work with Deno) |
+| `sinon` (Deno module)      | `sinon` (spying, stubbing, and mocking library) | ❌ (not yet adapted to work with Deno) |
+| `nodemailer` (Deno module) | `nodemailer` (library for sending emails) | ❌ (not yet adapted to work with Deno) |
+
 # How to turn an npm module to a package adapted for deno
 
 1. Make sure that the package does not have any dependencies that are not compatible with Deno. Some npm packages may have dependencies that are specific to Node.js or that use features that are not supported by Deno. If the package has such dependencies, you will need to either replace them with Deno-compatible alternatives or 
@@ -41,37 +76,3 @@ Another option for using npm packages in Deno is to use CDNs, or content deliver
 > import { map } from "https://unpkg.com/lodash@4.17.15/map.js".
 
 Using CDNs to import npm packages is a more established approach, but it has some drawbacks compared to using npm specifiers. CDN URLs can change over time, which can break your imports, and it can be more difficult to manage the version of the package that you are using.
-
-# The List of-npm-packages-adapted-to-deno
-
-| Deno                         | npm/Node                 | Status |
-|------------------------------|--------------------------|--------|
-| fs (Deno standard library)   | `fs` (Node.js file system API) | ✔ (adapted to work with Deno) |
-| http (Deno standard library) | `http` (Node.js HTTP API) | ✔ (adapted to work with Deno) |
-| path (Deno standard library) | `path` (Node.js path manipulation library) | ✔ (adapted to work with Deno) |
-| util (Deno standard library) | `util` (Node.js utility library) | ✔ (adapted to work with Deno) |
-| lodash (Deno module)         | `lodash` (JavaScript utility library) | ✔ (adapted to work with Deno) |
-| moment (Deno module)         | `moment` (JavaScript date and time library) | ✔ (adapted to work with Deno) |
-| isomorphic-fetch (Deno module) | `request` (HTTP request library) | ✔ (adapted to work with Deno) |
-| `react` (Deno module)      | `react` (JavaScript library for building user interfaces) | 🍋 (use FreshJS to work with Deno) |
-| axios (Deno module)          | `axios` (HTTP request library) | ❌ (not yet adapted to work with Deno) |
-| pg (Deno module)             | `pg` (PostgreSQL client library) | ❌ (not yet adapted to work with Deno) |
-| mongo (Deno module)          | `mongodb` (MongoDB driver library) | ❌ (not yet adapted to work with Deno) |
-| redis (Deno module)          | `redis` (Redis client library) | ❌ (not yet adapted to work with Deno) |
-| `bcrypt` (Deno module)     | `bcrypt` (password hashing library) | ❌ (not yet adapted to work with Deno) |
-| `crypto` (Deno module)     | `crypto` (cryptographic library) | ❌ (not yet adapted to work with Deno) |
-| `dotenv` (Deno module)     | `dotenv` (environment variable library) | ❌ (not yet adapted to work with Deno) |
-| `express` (Deno module)    | `express` (web framework) | ❌ (not yet adapted to work with Deno) |
-| `jest` (Deno module)       | `jest` (testing framework) | ❌ (not yet adapted to work with Deno) |
-| `knex` (Deno module)       | `knex` (SQL query builder) | ❌ (not yet adapted to work with Deno) |
-| `mocha` (Deno module)      | `mocha` (testing framework) | ❌ (not yet adapted to work with Deno) |
-| `mocha` (Deno module)      | `mocha` (testing framework) | ❌ (not yet adapted to work with Deno) |
-| `mysql2` (Deno module)     | `mysql2` (MySQL client library) | ❌ (not yet adapted to work with Deno) |
-| `passport` (Deno module)   | `passport` (authentication middleware) | ❌ (not yet adapted to work with Deno) |
-| `redux` (Deno module)      | `redux` (JavaScript library for managing application state) | ❌ (not yet adapted to work with Deno) |
-| `express-graphql` (Deno module) | `express-graphql` (GraphQL middleware for Express) | ❌ (not yet adapted to work with Deno) |
-| `next` (Deno module)       | `next` (web framework for server-rendered React apps) | ❌ (not yet adapted to work with Deno) |
-| `react-router` (Deno module) | `react-router` (routing library for React) | ❌ (not yet adapted to work with Deno) |
-| `chai` (Deno module)       | `chai` (assertion library) | ❌ (not yet adapted to work with Deno) |
-| `sinon` (Deno module)      | `sinon` (spying, stubbing, and mocking library) | ❌ (not yet adapted to work with Deno) |
-| `nodemailer` (Deno module) | `nodemailer` (library for sending emails) | ❌ (not yet adapted to work with Deno) |
