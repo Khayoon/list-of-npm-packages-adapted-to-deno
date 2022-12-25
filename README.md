@@ -51,9 +51,9 @@ While tools like specificers, CDNs and adapters may be a good option. Using nati
 
 2. Modify the package's code to use Deno APIs and features instead of Node.js-specific APIs. This may involve replacing calls to Node.js APIs with equivalent Deno APIs, or adapting the code to use Deno's built-in types and functionality.
 
-Identify the Node.js APIs that are being used in the code. Look for calls to functions like require, process, or Buffer, which are specific to Node.js.
+* Look for calls to functions like require, process, or Buffer, which are specific to Node.js.
 
-Determine what the Node.js APIs are being used for. Are they being used for file system access, networking, concurrency, or some other purpose? Understanding the purpose of the APIs will help you determine what Deno APIs or functionality to use as a replacement.
+* Determine what the Node.js APIs are being used for, file system access, networking, concurrency, or some other purpose? Understanding the purpose of the APIs will help you determine what Deno APIs or functionality to use as a replacement.
 
 * Find the equivalent Deno APIs or functionality. The Deno documentation is a good resource for finding Deno APIs that are equivalent to Node.js APIs. You can also search online or ask for help in Deno-specific forums or communities.
 
