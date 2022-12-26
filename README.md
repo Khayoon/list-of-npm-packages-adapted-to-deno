@@ -16,11 +16,11 @@ While tools like specificers, CDNs and adapters may be a good option. Using nati
 | `lodash` (Deno module)         | `lodash` (JavaScript utility library) | ✔ (adapted to work with Deno) |
 | `moment` (Deno module)         | `moment` (JavaScript date and time library) | ✔ (adapted to work with Deno) |
 | `isomorphic-fetch` (Deno module) | `request` (HTTP request library) | ✔ (adapted to work with Deno) |
-|`faker` ([Deno module](https://deno.land/x/deno_faker@v1.0.0/build/src/docs.md?source=))| `faker` (fake data generator) | ✔ ( ported to work with Deno)  |
-| `react` (Deno module)          | `react` (JavaScript library for building user interfaces) | 🍋 (use FreshJS or AlephJS to work with Deno) |
+|`faker` ([Deno module](https://deno.land/x/deno_faker@v1.0.0/build/src/docs.md?source=))| `faker` (fake data generator) | ✔ ( adapted to work with Deno)  |
 | `axiod` ([Deno module](https://deno.land/x/axiod@0.26.2))          | `axios` (HTTP request library) | ✔ (adapted to work with Deno)  |
 | `pg` (Deno module)             | `pg` (PostgreSQL client library) | ✔ (adapted to work with Deno) |
 | `mongo` (Deno module)          | `mongodb` (MongoDB driver library) | ✔ (adapted to work with Deno)  |
+| `react` (Deno module)          | `react` (JavaScript library for building user interfaces) | 🍋 (use FreshJS or AlephJS to work with Deno) |
 | `redis` (Deno module)          | `redis` (Redis client library) | ❌ (not yet adapted to work with Deno) |
 | `bcrypt` (Deno module)         | `bcrypt` (password hashing library) | ❌ (not yet adapted to work with Den
 | `crypto` (Deno module)    | `crypto` (cryptographic library) | ❌ (not yet adapted to work with Deno) |
