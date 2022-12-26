@@ -57,28 +57,7 @@ While tools like specificers, CDNs and adapters may be a good option. Using nati
 
 # How to turn an npm module to a package adapted for deno
 
-1. Make sure that the package does not have any dependencies that are not compatible with Deno. Some npm packages may have dependencies that are specific to Node.js or that use features that are not supported by Deno. If the package has such dependencies, you will need to either replace them with Deno-compatible alternatives or 
-
-* Replace the dependency with a Deno-compatible alternative. In some cases, you may be able to find a Deno-compatible library that provides similar functionality to the npm package dependency. For example, if the npm package depends on the request library, you could try using the isomorphic-fetch library instead, which provides a Deno-compatible implementation of the fetch API.
-
-* Port the dependency to Deno. If there is no Deno-compatible alternative to the npm package dependency, you may need to port the dependency to Deno yourself. This can involve modifying the dependency's code to use Deno APIs and features, and possibly writing additional code to adapt the dependency to Deno.
-
-* Use a compatibility layer. In some cases, you may be able to use a compatibility layer like esm or ts-node to "translate" the npm package dependency to Deno. These tools can allow you to use npm packages that are not natively compatible with Deno, by providing a shim that emulates the Node.js runtime environment. However, using a compatibility layer can add additional overhead and complexity to your project, and may not always be a feasible option.
-
-2. Modify the package's code to use Deno APIs and features instead of Node.js-specific APIs. This may involve replacing calls to Node.js APIs with equivalent Deno APIs, or adapting the code to use Deno's built-in types and functionality.
-
-* Look for calls to functions like require, process, or Buffer, which are specific to Node.js.
-
-* Determine what the Node.js APIs are being used for, file system access, networking, concurrency, or some other purpose? Understanding the purpose of the APIs will help you determine what Deno APIs or functionality to use as a replacement.
-
-* Find the equivalent Deno APIs or functionality. The Deno documentation is a good resource for finding Deno APIs that are equivalent to Node.js APIs. You can also search online or ask for help in Deno-specific forums or communities.
-
-* Modify the code to use the equivalent Deno APIs or functionality. Replace calls to Node.js APIs with calls to the equivalent Deno APIs, and make any other necessary changes to adapt the code to Deno's built-in types and functionality.
-
-
-3. Test the package to make sure that it works as expected in Deno. This may involve running the package's test suite, or writing additional test cases to ensure that all of the package's functionality is working correctly in Deno.This may involve running the package's test suite, or writing additional test cases to ensure that all of the package's functionality is working correctly in Deno.
-
-4. Publish the adapted package to a package registry that is compatible with Deno, such as deno.land/x.
+check out [denoify](https://github.com/garronej/denoify) and [DNT-Oak](https://deno.com/blog/dnt-oak)
 
 # Experimental solution
 
