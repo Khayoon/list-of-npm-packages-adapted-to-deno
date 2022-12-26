@@ -31,7 +31,7 @@ While tools like specificers, CDNs and adapters may be a good option. Using nati
 | `mocha` (Deno module)     | `mocha` (testing framework) | ❌ (not yet adapted to work with Deno) |
 | `mysql2` (Deno module)    | `mysql2` (MySQL client library) | ❌ (not yet adapted to work with Deno) |
 | `passport` (Deno module)  | `passport` (authentication middleware) | ❌ (not yet adapted to work with Deno) |
-| `redux` (Deno module)     | `redux` (JavaScript library for managing ? (not clear)
+| `redux` (Deno module)     | `redux` (JavaScript library for managing | ❓ (not clear)
 | `express-graphql` (Deno module)| `express-graphql` (GraphQL middleware for Express) | ❌ (not yet adapted to work with Deno) |
 | `next` (Deno module)           | `next` (web framework for server-rendered React apps) | ❌ (not yet adapted to work with Deno) |
 | `react-router` (Deno module)   | `react-router` (routing library for React) | ❌ (not yet adapted to work with Deno) |
