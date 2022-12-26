@@ -2,7 +2,7 @@ Using tools like deno-npm and deno_npm to use npm packages in Deno may introduce
 
 Many npm packages have been adapted to work with Deno directly, either through direct porting or by using a compatibility layer. In many cases, it may be more efficient and straightforward to use a native Deno module instead of a jerry-rigged workaround.
 
-While tools like specificers, CDNs and adapters may be a good option. Using native Deno modules, or limiting to a few npm packages, may be more efficient and straightforward.
+While tools like specificers, CDNs and adapters may be a good option. Using native Deno modules, or limiting to a few npm packages, is more efficient and straightforward.
 
 
 # List of npm packages adapted for Deno
