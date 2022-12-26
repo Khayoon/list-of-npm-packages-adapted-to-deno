@@ -17,7 +17,7 @@ While tools like specificers, CDNs and adapters may be a good option. Using nati
 | `moment` (Deno module)         | `moment` (JavaScript date and time library) | ✔ (adapted to work with Deno) |
 | `isomorphic-fetch` (Deno module) | `request` (HTTP request library) | ✔ (adapted to work with Deno) |
 |`faker` (Deno module)       | `faker` (fake data generator) | ✔ ([ported](https://deno.land/x/deno_faker@v1.0.0/build/src/docs.md?source=) to work with Deno)
-| `eslint-plugin-react` (Deno module) | `eslint-plugin-react` ✔ (remade as React-specific linting rules for ESLint)
+| `React-specific linting rules for ESLint` (Deno module) | `eslint-plugin-react`| ✔ ([remade](https://github.com/jsx-eslint/eslint-plugin-react))
 | `react` (Deno module)          | `react` (JavaScript library for building user interfaces) | 🍋 (use FreshJS to work with Deno) |
 | `axios` (Deno module)          | `axios` (HTTP request library) | ❌ (not yet adapted to work with Deno) |
 | `pg` (Deno module)             | `pg` (PostgreSQL client library) | ❌ (not yet adapted to work with Deno) |
