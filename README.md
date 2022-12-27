@@ -1,4 +1,8 @@
-Using tools like deno-npm and deno_npm to use npm packages in Deno may introduce some inefficiencies compared to using native Deno modules. These tools work by resolving the dependencies of the npm packages and generating a Deno-compatible module map, which can add additional overhead to the module loading process. In addition, using third-party tools like these may introduce additional dependencies and complexity to your project, which can make it more difficult to understand and maintain.
+Node.js allows you to import bare specifiers (e.g. react or lodash) -- its module resolution algorithm will look in your local and global node_modules for a path, introspect the package.json and try to see if there is a module named the right way.
+
+Deno, on the other hand, resolves modules the same way a browser does. For local files, Deno expects a full module name, including the extension. When dealing with remote imports, Deno expects the web server to do any "resolving" and provide back the media type of the code.
+
+To bridge this gap, Deno supports Import maps, a web-platform standard that allows you to use bare specifiers with Deno without having to install the Node.js package locally.
 
 Many npm packages have been adapted to work with Deno directly, either through direct porting or by using a compatibility layer. In many cases, it may be more efficient and straightforward to use a native Deno module instead of a jerry-rigged workaround.
 
