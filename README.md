@@ -13,7 +13,6 @@ While tools like specificers, CDNs and adapters may be a good option. Using nati
 | `http` (Deno standard library) | `http` (Node.js HTTP API) | ✔ (adapted to work with Deno) | |  |
 | `path` (Deno standard library) | `path` (Node.js path manipulation library) | ✔ (adapted to work with Deno) | |  |
 | `util` (Deno standard library) | `util` (Node.js utility library) | ✔ (adapted to work with Deno) | |  |
-| `lodash` (Deno module)         | `lodash` (JavaScript utility library) | ❌ does not work natively with Deno without a CDN or the 'npm:' prefix. | |  |
 | `moment` (Deno module)         | `moment` (JavaScript date and time library) | ✔ (adapted to work with Deno) | |  |
 | `isomorphic-fetch` (Deno module) | `fetch ` (HTTP request library) | ✔ (Web API supported by Deno) | |  |
 |`faker` ([Deno module](https://deno.land/x/deno_faker@v1.0.0/build/src/docs.md?source=))| `faker` (fake data generator) | ✔ ( adapted to work with Deno)  | |  |
@@ -27,8 +26,9 @@ While tools like specificers, CDNs and adapters may be a good option. Using nati
 | `cross-env` (Deno module)   | `Deno.env` (Deno standard library) | ✔ Deno version | |  |
 | `crypto` (Deno module)    | `crypto` (cryptographic library) | ✔ (adapted to work with Deno) | |  |
  `rimraf` (Deno module)      | `Deno.remove` (directory deletion utility) | ✔ Deno version | |  |
- | `eslint` (Deno module)      | `lint ` (Deno standard library) | ✔ Deno version | |  |
+ | `eslint` (Deno module)      | `lint ` (Deno standard library) | Deno version | |  |
 | `prettier` (Deno module)    | `fmt` (Deno standard library)| ✔ Deno version | |  |
+| `lodash` (Deno module)         | `lodash` (JavaScript utility library) | ❌ does not work natively with Deno  | ✔ | use 'npm:' prefix. |
 | `redis` (Deno module)          | `redis` (Redis client library) | ❌ (not yet adapted to work with Deno) | |  |
 | `bcrypt` (Deno module)         | `bcrypt` (password hashing library) | ❌ (not yet adapted to work with Deno) | |  |
 | `dotenv` (Deno module)    | `dotenv` (environment variable library) |  | |  |
