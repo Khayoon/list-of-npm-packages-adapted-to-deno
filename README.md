@@ -1,12 +1,4 @@
-Node.js allows you to import bare specifiers (e.g. react or lodash) -- its module resolution algorithm will look in your local and global node_modules for a path, introspect the package.json and try to see if there is a module named the right way.
-
-Deno, on the other hand, resolves modules the same way a browser does. For local files, Deno expects a full module name, including the extension. When dealing with remote imports, Deno expects the web server to do any "resolving" and provide back the media type of the code.
-
-To bridge this gap, Deno supports Import maps, a web-platform standard that allows you to use bare specifiers with Deno without having to install the Node.js package locally.
-
-Many npm packages have been adapted to work with Deno directly, either through direct porting or by using a compatibility layer. In many cases, it may be more efficient and straightforward to use a native Deno module instead of a jerry-rigged workaround.
-
-While tools like specificers, CDNs and import maps may be a good option. Using native Deno modules, or limiting to a few npm packages, is more efficient and straightforward.
+[Deno announced support for npm](https://deno.com/blog/v1.28) which is a huge deal because I think that was the main deal breaker for people not using it in the first place.
 
 
 # List of npm packages adapted for Deno
